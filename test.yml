@@ -1,0 +1,36 @@
+apiVersion: apps/v1
+
+kind: Deployment
+
+metadata:
+
+  name: test-deployment2
+
+  labels:
+
+    app: testapp2
+
+spec:
+
+  replicas: 1
+
+  selector:
+
+    matchLabels:
+
+      app: testapp2
+
+  template:
+
+    metadata:
+
+      labels:
+
+        app: testapp2
+
+    spec:
+      containers:
+
+      - name: testapp2
+
+        image: jsha/dnsutils   
