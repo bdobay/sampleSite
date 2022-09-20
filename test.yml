@@ -33,4 +33,4 @@ spec:
 
       - name: testapp2
 
-        image: jsha/dnsutils   
+        image: nginx   
